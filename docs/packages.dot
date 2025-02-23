@@ -1,0 +1,25 @@
+digraph "packages" {
+rankdir=BT
+charset="utf-8"
+"rateslib" [color="black", label=<rateslib>, shape="box", style="solid"];
+"rateslib._spec_loader" [color="black", label=<rateslib._spec_loader>, shape="box", style="solid"];
+"rateslib.curves" [color="black", label=<rateslib.curves>, shape="box", style="solid"];
+"rateslib.curves.curves" [color="black", label=<rateslib.curves.curves>, shape="box", style="solid"];
+"rateslib.default" [color="black", label=<rateslib.default>, shape="box", style="solid"];
+"rateslib.dual" [color="black", label=<rateslib.dual>, shape="box", style="solid"];
+"rateslib.dual.newton" [color="black", label=<rateslib.dual.newton>, shape="box", style="solid"];
+"rateslib.dual.quadratic" [color="black", label=<rateslib.dual.quadratic>, shape="box", style="solid"];
+"rateslib.dual.utils" [color="black", label=<rateslib.dual.utils>, shape="box", style="solid"];
+"rateslib.dual.variable" [color="black", label=<rateslib.dual.variable>, shape="box", style="solid"];
+"rateslib.rs" [color="black", label=<rateslib.rs>, shape="box", style="solid"];
+"rateslib.default" -> "rateslib._spec_loader" [arrowhead="open", arrowtail="none"];
+"rateslib.default" -> "rateslib.rs" [arrowhead="open", arrowtail="none"];
+"rateslib.dual.newton" -> "rateslib.dual.utils" [arrowhead="open", arrowtail="none"];
+"rateslib.dual.newton" -> "rateslib.rs" [arrowhead="open", arrowtail="none"];
+"rateslib.dual.quadratic" -> "rateslib.dual.newton" [arrowhead="open", arrowtail="none"];
+"rateslib.dual.utils" -> "rateslib.default" [arrowhead="open", arrowtail="none"];
+"rateslib.dual.utils" -> "rateslib.dual.variable" [arrowhead="open", arrowtail="none"];
+"rateslib.dual.utils" -> "rateslib.rs" [arrowhead="open", arrowtail="none"];
+"rateslib.dual.variable" -> "rateslib.default" [arrowhead="open", arrowtail="none"];
+"rateslib.dual.variable" -> "rateslib.rs" [arrowhead="open", arrowtail="none"];
+}

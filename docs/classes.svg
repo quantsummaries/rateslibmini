@@ -1,0 +1,510 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5076pt" height="1466pt" viewBox="0.00 0.00 5075.95 1466.40">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1462.4)">
+<title>classes</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1462.4 5071.95,-1462.4 5071.95,4 -4,4"/>
+<!-- rateslib.rs.ADOrder -->
+<g id="node1" class="node">
+<title>rateslib.rs.ADOrder</title>
+<polygon fill="none" stroke="black" points="0,-109.7 0,-217.7 68.87,-217.7 68.87,-109.7 0,-109.7"/>
+<text text-anchor="start" x="8" y="-201.1" font-family="Times,serif" font-size="14.00">ADOrder</text>
+<polyline fill="none" stroke="black" points="0,-192.9 68.87,-192.9"/>
+<text text-anchor="start" x="8.78" y="-176.3" font-family="Times,serif" font-size="14.00">One : str</text>
+<text text-anchor="start" x="8.78" y="-159.5" font-family="Times,serif" font-size="14.00">Two : str</text>
+<text text-anchor="start" x="8.78" y="-142.7" font-family="Times,serif" font-size="14.00">Zero : str</text>
+<polyline fill="none" stroke="black" points="0,-134.5 68.87,-134.5"/>
+<text text-anchor="start" x="32.68" y="-117.9" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.Curve -->
+<g id="node5" class="node">
+<title>rateslib.rs.Curve</title>
+<polygon fill="none" stroke="black" points="38.48,-683.1 38.48,-875.1 264.39,-875.1 264.39,-683.1 38.48,-683.1"/>
+<text text-anchor="start" x="134.33" y="-858.5" font-family="Times,serif" font-size="14.00">Curve</text>
+<polyline fill="none" stroke="black" points="38.48,-850.3 264.39,-850.3"/>
+<text text-anchor="start" x="63.96" y="-833.7" font-family="Times,serif" font-size="14.00">ad</text>
+<text text-anchor="start" x="63.96" y="-816.9" font-family="Times,serif" font-size="14.00">convention</text>
+<text text-anchor="start" x="63.96" y="-800.1" font-family="Times,serif" font-size="14.00">id : str</text>
+<text text-anchor="start" x="63.96" y="-783.3" font-family="Times,serif" font-size="14.00">interpolation : str</text>
+<text text-anchor="start" x="63.96" y="-766.5" font-family="Times,serif" font-size="14.00">modifier</text>
+<text text-anchor="start" x="63.96" y="-749.7" font-family="Times,serif" font-size="14.00">nodes : dict[datetime, Number]</text>
+<polyline fill="none" stroke="black" points="38.48,-741.5 264.39,-741.5"/>
+<text text-anchor="start" x="46.48" y="-724.9" font-family="Times,serif" font-size="14.00">index_value(date: datetime): Number</text>
+<text text-anchor="start" x="46.48" y="-708.1" font-family="Times,serif" font-size="14.00">set_ad_order(ad: ADOrder): None</text>
+<text text-anchor="start" x="46.48" y="-691.3" font-family="Times,serif" font-size="14.00">to_json(): str</text>
+</g>
+<!-- rateslib.rs.ADOrder&#45;&gt;rateslib.rs.Curve -->
+<g id="edge7" class="edge">
+<title>rateslib.rs.ADOrder-&gt;rateslib.rs.Curve</title>
+<path fill="none" stroke="black" d="M44.61,-218.06C63.79,-318.59 105.6,-537.78 130.85,-670.17"/>
+<polygon fill="black" stroke="black" points="130.82,-670.04 135.88,-675.18 133.07,-681.82 128.02,-676.68 130.82,-670.04"/>
+<text text-anchor="middle" x="75.61" y="-349.6" font-family="Times,serif" font-size="14.00" fill="green">ad</text>
+</g>
+<!-- rateslib.rs.Cal -->
+<g id="node2" class="node">
+<title>rateslib.rs.Cal</title>
+<polygon fill="none" stroke="black" points="282.43,-741.9 282.43,-816.3 336.43,-816.3 336.43,-741.9 282.43,-741.9"/>
+<text text-anchor="start" x="299.43" y="-799.7" font-family="Times,serif" font-size="14.00">Cal</text>
+<polyline fill="none" stroke="black" points="282.43,-791.5 335.88,-791.5"/>
+<polyline fill="none" stroke="black" points="282.43,-766.7 335.88,-766.7"/>
+<text text-anchor="start" x="307.41" y="-750.1" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs._DateRoll -->
+<g id="node28" class="node">
+<title>rateslib.rs._DateRoll</title>
+<polygon fill="none" stroke="black" points="97.88,-1215.5 97.88,-1457.9 686.99,-1457.9 686.99,-1215.5 97.88,-1215.5"/>
+<text text-anchor="start" x="363.66" y="-1441.3" font-family="Times,serif" font-size="14.00">_DateRoll</text>
+<polyline fill="none" stroke="black" points="97.88,-1433.1 686.99,-1433.1"/>
+<polyline fill="none" stroke="black" points="97.88,-1408.3 686.99,-1408.3"/>
+<text text-anchor="start" x="105.88" y="-1391.7" font-family="Times,serif" font-size="14.00">add_bus_days(date: datetime, days: int, settlement: bool): datetime</text>
+<text text-anchor="start" x="105.88" y="-1374.9" font-family="Times,serif" font-size="14.00">add_days(date: datetime, days: int, modifier: Modifier, settlement: bool): datetime</text>
+<text text-anchor="start" x="105.88" y="-1358.1" font-family="Times,serif" font-size="14.00">add_months(date: datetime, months: int, modifier: Modifier, roll: RollDay, settlement: bool): datetime</text>
+<text text-anchor="start" x="105.88" y="-1341.3" font-family="Times,serif" font-size="14.00">bus_date_range(start: datetime, end: datetime): list[datetime]</text>
+<text text-anchor="start" x="105.88" y="-1324.5" font-family="Times,serif" font-size="14.00">cal_date_range(start: datetime, end: datetime): list[datetime]</text>
+<text text-anchor="start" x="105.88" y="-1307.7" font-family="Times,serif" font-size="14.00">is_bus_day(date: datetime): bool</text>
+<text text-anchor="start" x="105.88" y="-1290.9" font-family="Times,serif" font-size="14.00">is_non_bus_day(date: datetime): bool</text>
+<text text-anchor="start" x="105.88" y="-1274.1" font-family="Times,serif" font-size="14.00">is_settlement(date: datetime): bool</text>
+<text text-anchor="start" x="105.88" y="-1257.3" font-family="Times,serif" font-size="14.00">lag(date: datetime, days: int, settlement: bool): datetime</text>
+<text text-anchor="start" x="105.88" y="-1240.5" font-family="Times,serif" font-size="14.00">roll(date: datetime, modifier: Modifier, settlement: bool): datetime</text>
+<text text-anchor="start" x="105.88" y="-1223.7" font-family="Times,serif" font-size="14.00">to_json(): str</text>
+</g>
+<!-- rateslib.rs.Cal&#45;&gt;rateslib.rs._DateRoll -->
+<g id="edge1" class="edge">
+<title>rateslib.rs.Cal-&gt;rateslib.rs._DateRoll</title>
+<path fill="none" stroke="black" d="M310.31,-816.65C312.53,-887.14 320.16,-1046.54 345.43,-1178 347.08,-1186.58 349.01,-1195.36 351.12,-1204.17"/>
+<polygon fill="none" stroke="black" points="347.72,-1205.01 353.53,-1213.87 354.52,-1203.32 347.72,-1205.01"/>
+</g>
+<!-- rateslib.rs.Ccy -->
+<g id="node3" class="node">
+<title>rateslib.rs.Ccy</title>
+<polygon fill="none" stroke="black" points="589.83,-126.5 589.83,-200.9 661.04,-200.9 661.04,-126.5 589.83,-126.5"/>
+<text text-anchor="start" x="614.16" y="-184.3" font-family="Times,serif" font-size="14.00">Ccy</text>
+<polyline fill="none" stroke="black" points="589.83,-176.1 661.04,-176.1"/>
+<text text-anchor="start" x="597.83" y="-159.5" font-family="Times,serif" font-size="14.00">name : str</text>
+<polyline fill="none" stroke="black" points="589.83,-151.3 661.04,-151.3"/>
+<text text-anchor="start" x="623.68" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.FXRates -->
+<g id="node11" class="node">
+<title>rateslib.rs.FXRates</title>
+<polygon fill="none" stroke="black" points="488.55,-666.3 488.55,-891.9 762.32,-891.9 762.32,-666.3 488.55,-666.3"/>
+<text text-anchor="start" x="600.93" y="-875.3" font-family="Times,serif" font-size="14.00">FXRates</text>
+<polyline fill="none" stroke="black" points="488.55,-867.1 762.32,-867.1"/>
+<text text-anchor="start" x="539.13" y="-850.5" font-family="Times,serif" font-size="14.00">ad : int</text>
+<text text-anchor="start" x="539.13" y="-833.7" font-family="Times,serif" font-size="14.00">base</text>
+<text text-anchor="start" x="539.13" y="-816.9" font-family="Times,serif" font-size="14.00">currencies : list[Ccy]</text>
+<text text-anchor="start" x="539.13" y="-800.1" font-family="Times,serif" font-size="14.00">fx_array : list[list[DualTypes]]</text>
+<text text-anchor="start" x="539.13" y="-783.3" font-family="Times,serif" font-size="14.00">fx_rates : list[FXRate]</text>
+<text text-anchor="start" x="539.13" y="-766.5" font-family="Times,serif" font-size="14.00">fx_vector : list[DualTypes]</text>
+<polyline fill="none" stroke="black" points="488.55,-758.3 762.32,-758.3"/>
+<text text-anchor="start" x="496.55" y="-741.7" font-family="Times,serif" font-size="14.00">get_ccy_index(currency: Ccy): int | None</text>
+<text text-anchor="start" x="496.55" y="-724.9" font-family="Times,serif" font-size="14.00">rate(lhs: Ccy, rhs: Ccy): Optional[DualTypes]</text>
+<text text-anchor="start" x="496.55" y="-708.1" font-family="Times,serif" font-size="14.00">set_ad_order(ad: ADOrder): None</text>
+<text text-anchor="start" x="496.55" y="-691.3" font-family="Times,serif" font-size="14.00">to_json(): str</text>
+<text text-anchor="start" x="496.55" y="-674.5" font-family="Times,serif" font-size="14.00">update(fx_rates: list[FXRate]): None</text>
+</g>
+<!-- rateslib.rs.Ccy&#45;&gt;rateslib.rs.FXRates -->
+<g id="edge8" class="edge">
+<title>rateslib.rs.Ccy-&gt;rateslib.rs.FXRates</title>
+<path fill="none" stroke="black" d="M625.43,-201.23C625.43,-288.27 625.43,-511.18 625.43,-653.04"/>
+<polygon fill="black" stroke="black" points="625.43,-653.18 629.43,-659.18 625.43,-665.18 621.43,-659.18 625.43,-653.18"/>
+<text text-anchor="middle" x="637.87" y="-349.6" font-family="Times,serif" font-size="14.00" fill="green">base</text>
+</g>
+<!-- rateslib.rs.Convention -->
+<g id="node4" class="node">
+<title>rateslib.rs.Convention</title>
+<polygon fill="none" stroke="black" points="86.66,-42.5 86.66,-284.9 216.21,-284.9 216.21,-42.5 86.66,-42.5"/>
+<text text-anchor="start" x="118.77" y="-268.3" font-family="Times,serif" font-size="14.00">Convention</text>
+<polyline fill="none" stroke="black" points="86.66,-260.1 216.21,-260.1"/>
+<text text-anchor="start" x="94.66" y="-243.5" font-family="Times,serif" font-size="14.00">Act360 : str</text>
+<text text-anchor="start" x="94.66" y="-226.7" font-family="Times,serif" font-size="14.00">Act365F : str</text>
+<text text-anchor="start" x="94.66" y="-209.9" font-family="Times,serif" font-size="14.00">Act365FPlus : str</text>
+<text text-anchor="start" x="94.66" y="-193.1" font-family="Times,serif" font-size="14.00">ActActICMA : str</text>
+<text text-anchor="start" x="94.66" y="-176.3" font-family="Times,serif" font-size="14.00">ActActISDA : str</text>
+<text text-anchor="start" x="94.66" y="-159.5" font-family="Times,serif" font-size="14.00">Bus252 : str</text>
+<text text-anchor="start" x="94.66" y="-142.7" font-family="Times,serif" font-size="14.00">One : str</text>
+<text text-anchor="start" x="94.66" y="-125.9" font-family="Times,serif" font-size="14.00">OnePlus : str</text>
+<text text-anchor="start" x="94.66" y="-109.1" font-family="Times,serif" font-size="14.00">Thirty360 : str</text>
+<text text-anchor="start" x="94.66" y="-92.3" font-family="Times,serif" font-size="14.00">Thirty360ISDA : str</text>
+<text text-anchor="start" x="94.66" y="-75.5" font-family="Times,serif" font-size="14.00">ThirtyE360 : str</text>
+<polyline fill="none" stroke="black" points="86.66,-67.3 216.21,-67.3"/>
+<text text-anchor="start" x="149.68" y="-50.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.Convention&#45;&gt;rateslib.rs.Curve -->
+<g id="edge9" class="edge">
+<title>rateslib.rs.Convention-&gt;rateslib.rs.Curve</title>
+<path fill="none" stroke="black" d="M151.43,-285.16C151.43,-397.14 151.43,-562.43 151.43,-670.19"/>
+<polygon fill="black" stroke="black" points="151.43,-670.14 155.43,-676.14 151.43,-682.14 147.43,-676.14 151.43,-670.14"/>
+<text text-anchor="middle" x="182.54" y="-349.6" font-family="Times,serif" font-size="14.00" fill="green">convention</text>
+</g>
+<!-- rateslib.curves.curves.Curve -->
+<g id="node6" class="node">
+<title>rateslib.curves.curves.Curve</title>
+<polygon fill="none" stroke="black" points="714.43,-126.5 714.43,-200.9 768.43,-200.9 768.43,-126.5 714.43,-126.5"/>
+<text text-anchor="start" x="723.93" y="-184.3" font-family="Times,serif" font-size="14.00">Curve</text>
+<polyline fill="none" stroke="black" points="714.43,-176.1 767.65,-176.1"/>
+<polyline fill="none" stroke="black" points="714.43,-151.3 767.65,-151.3"/>
+<text text-anchor="start" x="739.29" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.default.Defaults -->
+<g id="node7" class="node">
+<title>rateslib.default.Defaults</title>
+<polygon fill="none" stroke="black" points="780.22,-380.7 780.22,-1177.5 1064.64,-1177.5 1064.64,-380.7 780.22,-380.7"/>
+<text text-anchor="start" x="898.72" y="-1160.9" font-family="Times,serif" font-size="14.00">Defaults</text>
+<polyline fill="none" stroke="black" points="780.22,-1152.7 1064.64,-1152.7"/>
+<text text-anchor="start" x="788.22" y="-1136.1" font-family="Times,serif" font-size="14.00">algorithm : str</text>
+<text text-anchor="start" x="788.22" y="-1119.3" font-family="Times,serif" font-size="14.00">base_currency : str</text>
+<text text-anchor="start" x="788.22" y="-1102.5" font-family="Times,serif" font-size="14.00">calc_mode : dict</text>
+<text text-anchor="start" x="788.22" y="-1085.7" font-family="Times,serif" font-size="14.00">calc_mode_futures : str</text>
+<text text-anchor="start" x="788.22" y="-1068.9" font-family="Times,serif" font-size="14.00">calendars : dict[str, NamedCal | UnionCal | Cal]</text>
+<text text-anchor="start" x="788.22" y="-1052.1" font-family="Times,serif" font-size="14.00">cds_premium_accrued : bool</text>
+<text text-anchor="start" x="788.22" y="-1035.3" font-family="Times,serif" font-size="14.00">cds_protection_discretization : int</text>
+<text text-anchor="start" x="788.22" y="-1018.5" font-family="Times,serif" font-size="14.00">cds_recovery_rate : float</text>
+<text text-anchor="start" x="788.22" y="-1001.7" font-family="Times,serif" font-size="14.00">convention : str</text>
+<text text-anchor="start" x="788.22" y="-984.9" font-family="Times,serif" font-size="14.00">curve_caching : bool</text>
+<text text-anchor="start" x="788.22" y="-968.1" font-family="Times,serif" font-size="14.00">curve_caching_max : int</text>
+<text text-anchor="start" x="788.22" y="-951.3" font-family="Times,serif" font-size="14.00">curve_not_in_solver : str</text>
+<text text-anchor="start" x="788.22" y="-934.5" font-family="Times,serif" font-size="14.00">endpoints : str</text>
+<text text-anchor="start" x="788.22" y="-917.7" font-family="Times,serif" font-size="14.00">eom : bool</text>
+<text text-anchor="start" x="788.22" y="-900.9" font-family="Times,serif" font-size="14.00">eom_fx : bool</text>
+<text text-anchor="start" x="788.22" y="-884.1" font-family="Times,serif" font-size="14.00">eval_mode : str</text>
+<text text-anchor="start" x="788.22" y="-867.3" font-family="Times,serif" font-size="14.00">ex_div : int</text>
+<text text-anchor="start" x="788.22" y="-850.5" font-family="Times,serif" font-size="14.00">fixing_method : str</text>
+<text text-anchor="start" x="788.22" y="-833.7" font-family="Times,serif" font-size="14.00">fixing_method_param : dict</text>
+<text text-anchor="start" x="788.22" y="-816.9" font-family="Times,serif" font-size="14.00">fixings</text>
+<text text-anchor="start" x="788.22" y="-800.1" font-family="Times,serif" font-size="14.00">frequency_months : dict</text>
+<text text-anchor="start" x="788.22" y="-783.3" font-family="Times,serif" font-size="14.00">fx_delivery_lag : int</text>
+<text text-anchor="start" x="788.22" y="-766.5" font-family="Times,serif" font-size="14.00">fx_delta_type : str</text>
+<text text-anchor="start" x="788.22" y="-749.7" font-family="Times,serif" font-size="14.00">fx_option_metric : str</text>
+<text text-anchor="start" x="788.22" y="-732.9" font-family="Times,serif" font-size="14.00">headers : dict</text>
+<text text-anchor="start" x="788.22" y="-716.1" font-family="Times,serif" font-size="14.00">index_lag : int</text>
+<text text-anchor="start" x="788.22" y="-699.3" font-family="Times,serif" font-size="14.00">index_method : str</text>
+<text text-anchor="start" x="788.22" y="-682.5" font-family="Times,serif" font-size="14.00">ini_lambda : tuple</text>
+<text text-anchor="start" x="788.22" y="-665.7" font-family="Times,serif" font-size="14.00">interpolation : dict</text>
+<text text-anchor="start" x="788.22" y="-648.9" font-family="Times,serif" font-size="14.00">modifier : str</text>
+<text text-anchor="start" x="788.22" y="-632.1" font-family="Times,serif" font-size="14.00">multi_csa_steps : list</text>
+<text text-anchor="start" x="788.22" y="-615.3" font-family="Times,serif" font-size="14.00">no_fx_fixings_for_xcs : str</text>
+<text text-anchor="start" x="788.22" y="-598.5" font-family="Times,serif" font-size="14.00">notional : float</text>
+<text text-anchor="start" x="788.22" y="-581.7" font-family="Times,serif" font-size="14.00">payment_lag : int</text>
+<text text-anchor="start" x="788.22" y="-564.9" font-family="Times,serif" font-size="14.00">payment_lag_exchange : int</text>
+<text text-anchor="start" x="788.22" y="-548.1" font-family="Times,serif" font-size="14.00">payment_lag_specific : dict</text>
+<text text-anchor="start" x="788.22" y="-531.3" font-family="Times,serif" font-size="14.00">pool : int</text>
+<text text-anchor="start" x="788.22" y="-514.5" font-family="Times,serif" font-size="14.00">settle : int</text>
+<text text-anchor="start" x="788.22" y="-497.7" font-family="Times,serif" font-size="14.00">spec : dict</text>
+<text text-anchor="start" x="788.22" y="-480.9" font-family="Times,serif" font-size="14.00">spread_compound_method : str</text>
+<text text-anchor="start" x="788.22" y="-464.1" font-family="Times,serif" font-size="14.00">stub : str</text>
+<text text-anchor="start" x="788.22" y="-447.3" font-family="Times,serif" font-size="14.00">stub_length : str</text>
+<text text-anchor="start" x="788.22" y="-430.5" font-family="Times,serif" font-size="14.00">tag : str</text>
+<polyline fill="none" stroke="black" points="780.22,-422.3 1064.64,-422.3"/>
+<text text-anchor="start" x="860.04" y="-405.7" font-family="Times,serif" font-size="14.00">print(): str</text>
+<text text-anchor="start" x="860.04" y="-388.9" font-family="Times,serif" font-size="14.00">reset_defaults(): None</text>
+</g>
+<!-- rateslib.rs.Dual -->
+<g id="node8" class="node">
+<title>rateslib.rs.Dual</title>
+<polygon fill="none" stroke="black" points="1041.56,-101.3 1041.56,-226.1 1535.31,-226.1 1535.31,-101.3 1041.56,-101.3"/>
+<text text-anchor="start" x="1274.83" y="-209.5" font-family="Times,serif" font-size="14.00">Dual</text>
+<polyline fill="none" stroke="black" points="1041.56,-201.3 1535.31,-201.3"/>
+<text text-anchor="start" x="1251.11" y="-184.7" font-family="Times,serif" font-size="14.00">dual : str</text>
+<text text-anchor="start" x="1251.11" y="-167.9" font-family="Times,serif" font-size="14.00">real : float</text>
+<text text-anchor="start" x="1251.11" y="-151.1" font-family="Times,serif" font-size="14.00">vars : list[str]</text>
+<polyline fill="none" stroke="black" points="1041.56,-142.9 1535.31,-142.9"/>
+<text text-anchor="start" x="1049.56" y="-126.3" font-family="Times,serif" font-size="14.00">to_dual2(): 'Dual2'</text>
+<text text-anchor="start" x="1049.56" y="-109.5" font-family="Times,serif" font-size="14.00">vars_from(other: 'Dual', real: float, vars: Sequence[str], dual: Sequence[float]): 'Dual'</text>
+</g>
+<!-- rateslib.rs._DualOps -->
+<g id="node29" class="node">
+<title>rateslib.rs._DualOps</title>
+<polygon fill="none" stroke="black" points="1440.69,-716.7 1440.69,-841.5 1668.18,-841.5 1668.18,-716.7 1440.69,-716.7"/>
+<text text-anchor="start" x="1526.05" y="-824.9" font-family="Times,serif" font-size="14.00">_DualOps</text>
+<polyline fill="none" stroke="black" points="1440.69,-816.7 1668.18,-816.7"/>
+<polyline fill="none" stroke="black" points="1440.69,-791.9 1668.18,-791.9"/>
+<text text-anchor="start" x="1448.69" y="-775.3" font-family="Times,serif" font-size="14.00">grad1(vars: Sequence[str]): Arr1dF64</text>
+<text text-anchor="start" x="1448.69" y="-758.5" font-family="Times,serif" font-size="14.00">grad2(vars: Sequence[str]): Arr2dF64</text>
+<text text-anchor="start" x="1448.69" y="-741.7" font-family="Times,serif" font-size="14.00">ptr_eq(other: Self): bool</text>
+<text text-anchor="start" x="1448.69" y="-724.9" font-family="Times,serif" font-size="14.00">to_json(): str</text>
+</g>
+<!-- rateslib.rs.Dual&#45;&gt;rateslib.rs._DualOps -->
+<g id="edge2" class="edge">
+<title>rateslib.rs.Dual-&gt;rateslib.rs._DualOps</title>
+<path fill="none" stroke="black" d="M1315.16,-226.32C1364.7,-340.57 1470.54,-584.64 1523.26,-706.21"/>
+<polygon fill="none" stroke="black" points="1519.94,-707.35 1527.13,-715.13 1526.36,-704.56 1519.94,-707.35"/>
+</g>
+<!-- rateslib.rs.Dual2 -->
+<g id="node9" class="node">
+<title>rateslib.rs.Dual2</title>
+<polygon fill="none" stroke="black" points="1553.29,-84.5 1553.29,-242.9 2085.58,-242.9 2085.58,-84.5 1553.29,-84.5"/>
+<text text-anchor="start" x="1802.33" y="-226.3" font-family="Times,serif" font-size="14.00">Dual2</text>
+<polyline fill="none" stroke="black" points="1553.29,-218.1 2085.58,-218.1"/>
+<text text-anchor="start" x="1782.11" y="-201.5" font-family="Times,serif" font-size="14.00">dual : str</text>
+<text text-anchor="start" x="1782.11" y="-184.7" font-family="Times,serif" font-size="14.00">dual2 : str</text>
+<text text-anchor="start" x="1782.11" y="-167.9" font-family="Times,serif" font-size="14.00">real : float</text>
+<text text-anchor="start" x="1782.11" y="-151.1" font-family="Times,serif" font-size="14.00">vars : list[str]</text>
+<polyline fill="none" stroke="black" points="1553.29,-142.9 2085.58,-142.9"/>
+<text text-anchor="start" x="1561.29" y="-126.3" font-family="Times,serif" font-size="14.00">grad1_manifold(vars: Sequence[str]): list['Dual2']</text>
+<text text-anchor="start" x="1561.29" y="-109.5" font-family="Times,serif" font-size="14.00">to_dual(): Dual</text>
+<text text-anchor="start" x="1561.29" y="-92.7" font-family="Times,serif" font-size="14.00">vars_from(other: 'Dual2', real: float, vars: list[str], dual: list[float], dual2: list[float]): 'Dual2'</text>
+</g>
+<!-- rateslib.rs.Dual2&#45;&gt;rateslib.rs._DualOps -->
+<g id="edge3" class="edge">
+<title>rateslib.rs.Dual2-&gt;rateslib.rs._DualOps</title>
+<path fill="none" stroke="black" d="M1785.47,-243.32C1733.66,-363.23 1635.67,-590.07 1585.59,-705.98"/>
+<polygon fill="none" stroke="black" points="1582.4,-704.55 1581.65,-715.11 1588.82,-707.32 1582.4,-704.55"/>
+</g>
+<!-- rateslib.rs.FXRate -->
+<g id="node10" class="node">
+<title>rateslib.rs.FXRate</title>
+<polygon fill="none" stroke="black" points="2103.12,-101.3 2103.12,-226.1 2235.75,-226.1 2235.75,-101.3 2103.12,-101.3"/>
+<text text-anchor="start" x="2147.66" y="-209.5" font-family="Times,serif" font-size="14.00">FXRate</text>
+<polyline fill="none" stroke="black" points="2103.12,-201.3 2235.75,-201.3"/>
+<text text-anchor="start" x="2111.12" y="-184.7" font-family="Times,serif" font-size="14.00">ad : int</text>
+<text text-anchor="start" x="2111.12" y="-167.9" font-family="Times,serif" font-size="14.00">pair : str</text>
+<text text-anchor="start" x="2111.12" y="-151.1" font-family="Times,serif" font-size="14.00">rate : str</text>
+<text text-anchor="start" x="2111.12" y="-134.3" font-family="Times,serif" font-size="14.00">settlement : datetime</text>
+<polyline fill="none" stroke="black" points="2103.12,-126.1 2235.75,-126.1"/>
+<text text-anchor="start" x="2167.68" y="-109.5" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.default.Fixings -->
+<g id="node12" class="node">
+<title>rateslib.default.Fixings</title>
+<polygon fill="none" stroke="black" points="821.33,-118.1 821.33,-209.3 1023.54,-209.3 1023.54,-118.1 821.33,-118.1"/>
+<text text-anchor="start" x="901.43" y="-192.7" font-family="Times,serif" font-size="14.00">Fixings</text>
+<polyline fill="none" stroke="black" points="821.33,-184.5 1023.54,-184.5"/>
+<text text-anchor="start" x="829.33" y="-167.9" font-family="Times,serif" font-size="14.00">directory</text>
+<text text-anchor="start" x="829.33" y="-151.1" font-family="Times,serif" font-size="14.00">loaded : dict[str, pd.Series[float]]</text>
+<polyline fill="none" stroke="black" points="821.33,-142.9 1023.54,-142.9"/>
+<text text-anchor="start" x="920.68" y="-126.3" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.default.Fixings&#45;&gt;rateslib.default.Defaults -->
+<g id="edge6" class="edge">
+<title>rateslib.default.Fixings-&gt;rateslib.default.Defaults</title>
+<path fill="none" stroke="black" d="M922.43,-209.31C922.43,-246.53 922.43,-303.66 922.43,-367.62"/>
+<polygon fill="black" stroke="black" points="922.43,-367.6 926.43,-373.6 922.43,-379.6 918.43,-373.6 922.43,-367.6"/>
+<text text-anchor="middle" x="941.88" y="-349.6" font-family="Times,serif" font-size="14.00" fill="green">fixings</text>
+</g>
+<!-- rateslib.rs.FlatBackwardInterpolator -->
+<g id="node13" class="node">
+<title>rateslib.rs.FlatBackwardInterpolator</title>
+<polygon fill="none" stroke="black" points="2254.13,-126.5 2254.13,-200.9 2414.74,-200.9 2414.74,-126.5 2254.13,-126.5"/>
+<text text-anchor="start" x="2262.13" y="-184.3" font-family="Times,serif" font-size="14.00">FlatBackwardInterpolator</text>
+<polyline fill="none" stroke="black" points="2254.13,-176.1 2414.74,-176.1"/>
+<polyline fill="none" stroke="black" points="2254.13,-151.3 2414.74,-151.3"/>
+<text text-anchor="start" x="2332.68" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.FlatForwardInterpolator -->
+<g id="node14" class="node">
+<title>rateslib.rs.FlatForwardInterpolator</title>
+<polygon fill="none" stroke="black" points="2432.79,-126.5 2432.79,-200.9 2584.08,-200.9 2584.08,-126.5 2432.79,-126.5"/>
+<text text-anchor="start" x="2440.79" y="-184.3" font-family="Times,serif" font-size="14.00">FlatForwardInterpolator</text>
+<polyline fill="none" stroke="black" points="2432.79,-176.1 2584.08,-176.1"/>
+<polyline fill="none" stroke="black" points="2432.79,-151.3 2584.08,-151.3"/>
+<text text-anchor="start" x="2506.68" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.LinearInterpolator -->
+<g id="node15" class="node">
+<title>rateslib.rs.LinearInterpolator</title>
+<polygon fill="none" stroke="black" points="2602.13,-126.5 2602.13,-200.9 2720.74,-200.9 2720.74,-126.5 2602.13,-126.5"/>
+<text text-anchor="start" x="2610.13" y="-184.3" font-family="Times,serif" font-size="14.00">LinearInterpolator</text>
+<polyline fill="none" stroke="black" points="2602.13,-176.1 2720.74,-176.1"/>
+<polyline fill="none" stroke="black" points="2602.13,-151.3 2720.74,-151.3"/>
+<text text-anchor="start" x="2659.68" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.LinearZeroRateInterpolator -->
+<g id="node16" class="node">
+<title>rateslib.rs.LinearZeroRateInterpolator</title>
+<polygon fill="none" stroke="black" points="2739.09,-126.5 2739.09,-200.9 2909.78,-200.9 2909.78,-126.5 2739.09,-126.5"/>
+<text text-anchor="start" x="2747.09" y="-184.3" font-family="Times,serif" font-size="14.00">LinearZeroRateInterpolator</text>
+<polyline fill="none" stroke="black" points="2739.09,-176.1 2909.78,-176.1"/>
+<polyline fill="none" stroke="black" points="2739.09,-151.3 2909.78,-151.3"/>
+<text text-anchor="start" x="2822.68" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.LogLinearInterpolator -->
+<g id="node17" class="node">
+<title>rateslib.rs.LogLinearInterpolator</title>
+<polygon fill="none" stroke="black" points="2927.85,-126.5 2927.85,-200.9 3069.02,-200.9 3069.02,-126.5 2927.85,-126.5"/>
+<text text-anchor="start" x="2935.85" y="-184.3" font-family="Times,serif" font-size="14.00">LogLinearInterpolator</text>
+<polyline fill="none" stroke="black" points="2927.85,-176.1 3069.02,-176.1"/>
+<polyline fill="none" stroke="black" points="2927.85,-151.3 3069.02,-151.3"/>
+<text text-anchor="start" x="2996.68" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.Modifier -->
+<g id="node18" class="node">
+<title>rateslib.rs.Modifier</title>
+<polygon fill="none" stroke="black" points="233.87,-92.9 233.87,-234.5 309,-234.5 309,-92.9 233.87,-92.9"/>
+<text text-anchor="start" x="246.55" y="-217.9" font-family="Times,serif" font-size="14.00">Modifier</text>
+<polyline fill="none" stroke="black" points="233.87,-209.7 309,-209.7"/>
+<text text-anchor="start" x="241.87" y="-193.1" font-family="Times,serif" font-size="14.00">Act : str</text>
+<text text-anchor="start" x="241.87" y="-176.3" font-family="Times,serif" font-size="14.00">F : str</text>
+<text text-anchor="start" x="241.87" y="-159.5" font-family="Times,serif" font-size="14.00">ModF : str</text>
+<text text-anchor="start" x="241.87" y="-142.7" font-family="Times,serif" font-size="14.00">ModP : str</text>
+<text text-anchor="start" x="241.87" y="-125.9" font-family="Times,serif" font-size="14.00">P : str</text>
+<polyline fill="none" stroke="black" points="233.87,-117.7 309,-117.7"/>
+<text text-anchor="start" x="269.68" y="-101.1" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.Modifier&#45;&gt;rateslib.rs.Curve -->
+<g id="edge10" class="edge">
+<title>rateslib.rs.Modifier-&gt;rateslib.rs.Curve</title>
+<path fill="none" stroke="black" d="M257.73,-234.77C236.9,-341.21 197.13,-544.52 172.58,-670"/>
+<polygon fill="black" stroke="black" points="172.59,-669.99 175.36,-676.64 170.28,-681.76 167.51,-675.11 172.59,-669.99"/>
+<text text-anchor="middle" x="260.08" y="-349.6" font-family="Times,serif" font-size="14.00" fill="green">modifier</text>
+</g>
+<!-- rateslib.rs.NamedCal -->
+<g id="node19" class="node">
+<title>rateslib.rs.NamedCal</title>
+<polygon fill="none" stroke="black" points="354.5,-741.9 354.5,-816.3 430.37,-816.3 430.37,-741.9 354.5,-741.9"/>
+<text text-anchor="start" x="362.5" y="-799.7" font-family="Times,serif" font-size="14.00">NamedCal</text>
+<polyline fill="none" stroke="black" points="354.5,-791.5 430.37,-791.5"/>
+<text text-anchor="start" x="364.83" y="-774.9" font-family="Times,serif" font-size="14.00">union_cal</text>
+<polyline fill="none" stroke="black" points="354.5,-766.7 430.37,-766.7"/>
+<text text-anchor="start" x="390.68" y="-750.1" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.NamedCal&#45;&gt;rateslib.rs._DateRoll -->
+<g id="edge4" class="edge">
+<title>rateslib.rs.NamedCal-&gt;rateslib.rs._DateRoll</title>
+<path fill="none" stroke="black" d="M392.43,-816.55C392.43,-893.77 392.43,-1077.11 392.43,-1203.85"/>
+<polygon fill="none" stroke="black" points="388.93,-1203.65 392.43,-1213.65 395.93,-1203.65 388.93,-1203.65"/>
+</g>
+<!-- rateslib.default.NoInput -->
+<g id="node20" class="node">
+<title>rateslib.default.NoInput</title>
+<polygon fill="none" stroke="black" points="3087.1,-126.5 3087.1,-200.9 3149.77,-200.9 3149.77,-126.5 3087.1,-126.5"/>
+<text text-anchor="start" x="3095.1" y="-184.3" font-family="Times,serif" font-size="14.00">NoInput</text>
+<polyline fill="none" stroke="black" points="3087.1,-176.1 3149.77,-176.1"/>
+<text text-anchor="start" x="3103.28" y="-159.5" font-family="Times,serif" font-size="14.00">name</text>
+<polyline fill="none" stroke="black" points="3087.1,-151.3 3149.77,-151.3"/>
+<text text-anchor="start" x="3116.68" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.NullInterpolator -->
+<g id="node21" class="node">
+<title>rateslib.rs.NullInterpolator</title>
+<polygon fill="none" stroke="black" points="3167.95,-126.5 3167.95,-200.9 3274.92,-200.9 3274.92,-126.5 3167.95,-126.5"/>
+<text text-anchor="start" x="3175.95" y="-184.3" font-family="Times,serif" font-size="14.00">NullInterpolator</text>
+<polyline fill="none" stroke="black" points="3167.95,-176.1 3274.92,-176.1"/>
+<polyline fill="none" stroke="black" points="3167.95,-151.3 3274.92,-151.3"/>
+<text text-anchor="start" x="3219.68" y="-134.7" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.PPSplineDual -->
+<g id="node22" class="node">
+<title>rateslib.rs.PPSplineDual</title>
+<polygon fill="none" stroke="black" points="3292.64,-0.5 3292.64,-326.9 3768.23,-326.9 3768.23,-0.5 3292.64,-0.5"/>
+<text text-anchor="start" x="3491.15" y="-310.3" font-family="Times,serif" font-size="14.00">PPSplineDual</text>
+<polyline fill="none" stroke="black" points="3292.64,-302.1 3768.23,-302.1"/>
+<text text-anchor="start" x="3474.99" y="-285.5" font-family="Times,serif" font-size="14.00">c : list[Dual] | None</text>
+<text text-anchor="start" x="3474.99" y="-268.7" font-family="Times,serif" font-size="14.00">k : int</text>
+<text text-anchor="start" x="3474.99" y="-251.9" font-family="Times,serif" font-size="14.00">n : int</text>
+<text text-anchor="start" x="3474.99" y="-235.1" font-family="Times,serif" font-size="14.00">t : list[float]</text>
+<polyline fill="none" stroke="black" points="3292.64,-226.9 3768.23,-226.9"/>
+<text text-anchor="start" x="3300.64" y="-210.3" font-family="Times,serif" font-size="14.00">bspldnev(x: list[float], i: int, m: int): list[Dual]</text>
+<text text-anchor="start" x="3300.64" y="-193.5" font-family="Times,serif" font-size="14.00">bsplev(x: list[float], i: int): list[Dual]</text>
+<text text-anchor="start" x="3300.64" y="-176.7" font-family="Times,serif" font-size="14.00">bsplmatrix(tau: list[float], left_n: int, right_n: int): Arr2dF64</text>
+<text text-anchor="start" x="3300.64" y="-159.9" font-family="Times,serif" font-size="14.00">csolve(tau: list[float], y: list[Dual], left_n: int, right_n: int, allow_lsq: bool): None</text>
+<text text-anchor="start" x="3300.64" y="-143.1" font-family="Times,serif" font-size="14.00">ppdnev(x: list[float], m: int): list[Dual]</text>
+<text text-anchor="start" x="3300.64" y="-126.3" font-family="Times,serif" font-size="14.00">ppdnev_single(x: Number, m: int): Dual</text>
+<text text-anchor="start" x="3300.64" y="-109.5" font-family="Times,serif" font-size="14.00">ppdnev_single_dual(x: Number, m: int): Dual</text>
+<text text-anchor="start" x="3300.64" y="-92.7" font-family="Times,serif" font-size="14.00">ppdnev_single_dual2(x: Number, m: int): Dual2</text>
+<text text-anchor="start" x="3300.64" y="-75.9" font-family="Times,serif" font-size="14.00">ppev(x: list[float]): list[Dual]</text>
+<text text-anchor="start" x="3300.64" y="-59.1" font-family="Times,serif" font-size="14.00">ppev_single(x: Number): Dual</text>
+<text text-anchor="start" x="3300.64" y="-42.3" font-family="Times,serif" font-size="14.00">ppev_single_dual(x: Number): Dual</text>
+<text text-anchor="start" x="3300.64" y="-25.5" font-family="Times,serif" font-size="14.00">ppev_single_dual2(x: Number): Dual2</text>
+<text text-anchor="start" x="3300.64" y="-8.7" font-family="Times,serif" font-size="14.00">to_json(): str</text>
+</g>
+<!-- rateslib.rs.PPSplineDual2 -->
+<g id="node23" class="node">
+<title>rateslib.rs.PPSplineDual2</title>
+<polygon fill="none" stroke="black" points="3786.14,-0.5 3786.14,-326.9 4268.73,-326.9 4268.73,-0.5 3786.14,-0.5"/>
+<text text-anchor="start" x="3984.65" y="-310.3" font-family="Times,serif" font-size="14.00">PPSplineDual2</text>
+<polyline fill="none" stroke="black" points="3786.14,-302.1 4268.73,-302.1"/>
+<text text-anchor="start" x="3968.49" y="-285.5" font-family="Times,serif" font-size="14.00">c : list[Dual2] | None</text>
+<text text-anchor="start" x="3968.49" y="-268.7" font-family="Times,serif" font-size="14.00">k : int</text>
+<text text-anchor="start" x="3968.49" y="-251.9" font-family="Times,serif" font-size="14.00">n : int</text>
+<text text-anchor="start" x="3968.49" y="-235.1" font-family="Times,serif" font-size="14.00">t : list[float]</text>
+<polyline fill="none" stroke="black" points="3786.14,-226.9 4268.73,-226.9"/>
+<text text-anchor="start" x="3794.14" y="-210.3" font-family="Times,serif" font-size="14.00">bspldnev(x: list[float], i: int, m: int): list[Dual2]</text>
+<text text-anchor="start" x="3794.14" y="-193.5" font-family="Times,serif" font-size="14.00">bsplev(x: list[float], i: int): list[Dual2]</text>
+<text text-anchor="start" x="3794.14" y="-176.7" font-family="Times,serif" font-size="14.00">bsplmatrix(tau: list[float], left_n: int, right_n: int): Arr2dF64</text>
+<text text-anchor="start" x="3794.14" y="-159.9" font-family="Times,serif" font-size="14.00">csolve(tau: list[float], y: list[Dual2], left_n: int, right_n: int, allow_lsq: bool): None</text>
+<text text-anchor="start" x="3794.14" y="-143.1" font-family="Times,serif" font-size="14.00">ppdnev(x: list[float], m: int): list[Dual2]</text>
+<text text-anchor="start" x="3794.14" y="-126.3" font-family="Times,serif" font-size="14.00">ppdnev_single(x: Number, m: int): Dual2</text>
+<text text-anchor="start" x="3794.14" y="-109.5" font-family="Times,serif" font-size="14.00">ppdnev_single_dual(x: Number, m: int): Dual</text>
+<text text-anchor="start" x="3794.14" y="-92.7" font-family="Times,serif" font-size="14.00">ppdnev_single_dual2(x: Number, m: int): Dual2</text>
+<text text-anchor="start" x="3794.14" y="-75.9" font-family="Times,serif" font-size="14.00">ppev(x: list[float]): list[Dual2]</text>
+<text text-anchor="start" x="3794.14" y="-59.1" font-family="Times,serif" font-size="14.00">ppev_single(x: Number): Dual2</text>
+<text text-anchor="start" x="3794.14" y="-42.3" font-family="Times,serif" font-size="14.00">ppev_single_dual(x: Number): Dual</text>
+<text text-anchor="start" x="3794.14" y="-25.5" font-family="Times,serif" font-size="14.00">ppev_single_dual2(x: Number): Dual2</text>
+<text text-anchor="start" x="3794.14" y="-8.7" font-family="Times,serif" font-size="14.00">to_json(): str</text>
+</g>
+<!-- rateslib.rs.PPSplineF64 -->
+<g id="node24" class="node">
+<title>rateslib.rs.PPSplineF64</title>
+<polygon fill="none" stroke="black" points="4286.42,-0.5 4286.42,-326.9 4760.45,-326.9 4760.45,-0.5 4286.42,-0.5"/>
+<text text-anchor="start" x="4486.87" y="-310.3" font-family="Times,serif" font-size="14.00">PPSplineF64</text>
+<polyline fill="none" stroke="black" points="4286.42,-302.1 4760.45,-302.1"/>
+<text text-anchor="start" x="4468.77" y="-285.5" font-family="Times,serif" font-size="14.00">c : list[float] | None</text>
+<text text-anchor="start" x="4468.77" y="-268.7" font-family="Times,serif" font-size="14.00">k : int</text>
+<text text-anchor="start" x="4468.77" y="-251.9" font-family="Times,serif" font-size="14.00">n : int</text>
+<text text-anchor="start" x="4468.77" y="-235.1" font-family="Times,serif" font-size="14.00">t : list[float]</text>
+<polyline fill="none" stroke="black" points="4286.42,-226.9 4760.45,-226.9"/>
+<text text-anchor="start" x="4294.42" y="-210.3" font-family="Times,serif" font-size="14.00">bspldnev(x: list[float], i: int, m: int): list[float]</text>
+<text text-anchor="start" x="4294.42" y="-193.5" font-family="Times,serif" font-size="14.00">bsplev(x: list[float], i: int): list[float]</text>
+<text text-anchor="start" x="4294.42" y="-176.7" font-family="Times,serif" font-size="14.00">bsplmatrix(tau: list[float], left_n: int, right_n: int): Arr2dF64</text>
+<text text-anchor="start" x="4294.42" y="-159.9" font-family="Times,serif" font-size="14.00">csolve(tau: list[float], y: list[float], left_n: int, right_n: int, allow_lsq: bool): None</text>
+<text text-anchor="start" x="4294.42" y="-143.1" font-family="Times,serif" font-size="14.00">ppdnev(x: list[float], m: int): list[float]</text>
+<text text-anchor="start" x="4294.42" y="-126.3" font-family="Times,serif" font-size="14.00">ppdnev_single(x: Number, m: int): float</text>
+<text text-anchor="start" x="4294.42" y="-109.5" font-family="Times,serif" font-size="14.00">ppdnev_single_dual(x: Number, m: int): Dual</text>
+<text text-anchor="start" x="4294.42" y="-92.7" font-family="Times,serif" font-size="14.00">ppdnev_single_dual2(x: Number, m: int): Dual2</text>
+<text text-anchor="start" x="4294.42" y="-75.9" font-family="Times,serif" font-size="14.00">ppev(x: list[float]): list[float]</text>
+<text text-anchor="start" x="4294.42" y="-59.1" font-family="Times,serif" font-size="14.00">ppev_single(x: Number): float</text>
+<text text-anchor="start" x="4294.42" y="-42.3" font-family="Times,serif" font-size="14.00">ppev_single_dual(x: Number): Dual</text>
+<text text-anchor="start" x="4294.42" y="-25.5" font-family="Times,serif" font-size="14.00">ppev_single_dual2(x: Number): Dual2</text>
+<text text-anchor="start" x="4294.42" y="-8.7" font-family="Times,serif" font-size="14.00">to_json(): str</text>
+</g>
+<!-- rateslib.rs.RollDay -->
+<g id="node25" class="node">
+<title>rateslib.rs.RollDay</title>
+<polygon fill="none" stroke="black" points="4778.01,-92.9 4778.01,-234.5 4930.86,-234.5 4930.86,-92.9 4778.01,-92.9"/>
+<text text-anchor="start" x="4830.71" y="-217.9" font-family="Times,serif" font-size="14.00">RollDay</text>
+<polyline fill="none" stroke="black" points="4778.01,-209.7 4930.86,-209.7"/>
+<polyline fill="none" stroke="black" points="4778.01,-184.9 4930.86,-184.9"/>
+<text text-anchor="start" x="4786.01" y="-168.3" font-family="Times,serif" font-size="14.00">EoM(): 'RollDay'</text>
+<text text-anchor="start" x="4786.01" y="-151.5" font-family="Times,serif" font-size="14.00">IMM(): 'RollDay'</text>
+<text text-anchor="start" x="4786.01" y="-134.7" font-family="Times,serif" font-size="14.00">Int(val: int): 'RollDay'</text>
+<text text-anchor="start" x="4786.01" y="-117.9" font-family="Times,serif" font-size="14.00">SoM(): 'RollDay'</text>
+<text text-anchor="start" x="4786.01" y="-101.1" font-family="Times,serif" font-size="14.00">Unspecified(): 'RollDay'</text>
+</g>
+<!-- rateslib.rs.UnionCal -->
+<g id="node26" class="node">
+<title>rateslib.rs.UnionCal</title>
+<polygon fill="none" stroke="black" points="346.35,-118.1 346.35,-209.3 536.52,-209.3 536.52,-118.1 346.35,-118.1"/>
+<text text-anchor="start" x="414.21" y="-192.7" font-family="Times,serif" font-size="14.00">UnionCal</text>
+<polyline fill="none" stroke="black" points="346.35,-184.5 536.52,-184.5"/>
+<text text-anchor="start" x="354.35" y="-167.9" font-family="Times,serif" font-size="14.00">calendars : list[Cal]</text>
+<text text-anchor="start" x="354.35" y="-151.1" font-family="Times,serif" font-size="14.00">settlement_calendars : list[Cal]</text>
+<polyline fill="none" stroke="black" points="346.35,-142.9 536.52,-142.9"/>
+<text text-anchor="start" x="439.68" y="-126.3" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- rateslib.rs.UnionCal&#45;&gt;rateslib.rs.NamedCal -->
+<g id="edge11" class="edge">
+<title>rateslib.rs.UnionCal-&gt;rateslib.rs.NamedCal</title>
+<path fill="none" stroke="black" d="M425.27,-209.66C413.18,-245.79 397.67,-298.14 391.23,-345.4 372.43,-483.24 381.46,-648.09 387.9,-728.74"/>
+<polygon fill="black" stroke="black" points="387.88,-728.55 392.36,-734.2 388.87,-740.51 384.39,-734.86 387.88,-728.55"/>
+<text text-anchor="middle" x="418.83" y="-349.6" font-family="Times,serif" font-size="14.00" fill="green">union_cal</text>
+</g>
+<!-- rateslib.rs.UnionCal&#45;&gt;rateslib.rs._DateRoll -->
+<g id="edge5" class="edge">
+<title>rateslib.rs.UnionCal-&gt;rateslib.rs._DateRoll</title>
+<path fill="none" stroke="black" d="M443.34,-209.8C444.84,-249.82 446.66,-309.89 446.43,-362.2 444.88,-724.79 493.3,-819.43 439.43,-1178 438.15,-1186.54 436.52,-1195.27 434.63,-1204.01"/>
+<polygon fill="none" stroke="black" points="431.25,-1203.08 432.45,-1213.61 438.08,-1204.63 431.25,-1203.08"/>
+</g>
+<!-- rateslib.dual.variable.Variable -->
+<g id="node27" class="node">
+<title>rateslib.dual.variable.Variable</title>
+<polygon fill="none" stroke="black" points="4948.92,-101.3 4948.92,-226.1 5067.95,-226.1 5067.95,-101.3 4948.92,-101.3"/>
+<text text-anchor="start" x="4984.34" y="-209.5" font-family="Times,serif" font-size="14.00">Variable</text>
+<polyline fill="none" stroke="black" points="4948.92,-201.3 5067.95,-201.3"/>
+<text text-anchor="start" x="4956.92" y="-184.7" font-family="Times,serif" font-size="14.00">dual : str</text>
+<text text-anchor="start" x="4956.92" y="-167.9" font-family="Times,serif" font-size="14.00">real : float</text>
+<text text-anchor="start" x="4956.92" y="-151.1" font-family="Times,serif" font-size="14.00">vars : tuple[str, ...]</text>
+<polyline fill="none" stroke="black" points="4948.92,-142.9 5067.95,-142.9"/>
+<text text-anchor="start" x="4958.47" y="-126.3" font-family="Times,serif" font-size="14.00">to_dual(): Dual</text>
+<text text-anchor="start" x="4958.47" y="-109.5" font-family="Times,serif" font-size="14.00">to_dual2(): Dual2</text>
+</g>
+</g>
+</svg>

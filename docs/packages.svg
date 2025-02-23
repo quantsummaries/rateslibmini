@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="404pt" viewBox="0.00 0.00 611.69 404.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>packages</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 607.69,-400 607.69,4 -4,4"/>
+<!-- rateslib -->
+<g id="node1" class="node">
+<title>rateslib</title>
+<polygon fill="none" stroke="black" points="71.88,-36 14.68,-36 14.68,0 71.88,0 71.88,-36"/>
+<text text-anchor="middle" x="43.28" y="-13.8" font-family="Times,serif" font-size="14.00">rateslib</text>
+</g>
+<!-- rateslib._spec_loader -->
+<g id="node2" class="node">
+<title>rateslib._spec_loader</title>
+<polygon fill="none" stroke="black" points="134.56,-396 0,-396 0,-360 134.56,-360 134.56,-396"/>
+<text text-anchor="middle" x="67.28" y="-373.8" font-family="Times,serif" font-size="14.00">rateslib._spec_loader</text>
+</g>
+<!-- rateslib.curves -->
+<g id="node3" class="node">
+<title>rateslib.curves</title>
+<polygon fill="none" stroke="black" points="345.9,-36 248.66,-36 248.66,0 345.9,0 345.9,-36"/>
+<text text-anchor="middle" x="297.28" y="-13.8" font-family="Times,serif" font-size="14.00">rateslib.curves</text>
+</g>
+<!-- rateslib.curves.curves -->
+<g id="node4" class="node">
+<title>rateslib.curves.curves</title>
+<polygon fill="none" stroke="black" points="500.92,-36 363.64,-36 363.64,0 500.92,0 500.92,-36"/>
+<text text-anchor="middle" x="432.28" y="-13.8" font-family="Times,serif" font-size="14.00">rateslib.curves.curves</text>
+</g>
+<!-- rateslib.default -->
+<g id="node5" class="node">
+<title>rateslib.default</title>
+<polygon fill="none" stroke="black" points="119.07,-324 19.49,-324 19.49,-288 119.07,-288 119.07,-324"/>
+<text text-anchor="middle" x="69.28" y="-301.8" font-family="Times,serif" font-size="14.00">rateslib.default</text>
+</g>
+<!-- rateslib.default&#45;&gt;rateslib._spec_loader -->
+<g id="edge1" class="edge">
+<title>rateslib.default-&gt;rateslib._spec_loader</title>
+<path fill="none" stroke="black" d="M68.79,-324.3C68.58,-331.68 68.32,-340.48 68.09,-348.75"/>
+<polygon fill="black" stroke="black" points="67.8,-358.68 63.59,-348.55 67.91,-354.9 68.09,-348.68 68.09,-348.68 68.09,-348.68 67.91,-354.9 72.59,-348.81 67.8,-358.68"/>
+</g>
+<!-- rateslib.rs -->
+<g id="node11" class="node">
+<title>rateslib.rs</title>
+<polygon fill="none" stroke="black" points="223.69,-396 152.87,-396 152.87,-360 223.69,-360 223.69,-396"/>
+<text text-anchor="middle" x="188.28" y="-373.8" font-family="Times,serif" font-size="14.00">rateslib.rs</text>
+</g>
+<!-- rateslib.default&#45;&gt;rateslib.rs -->
+<g id="edge2" class="edge">
+<title>rateslib.default-&gt;rateslib.rs</title>
+<path fill="none" stroke="black" d="M99,-324.48C114.31,-333.49 133.16,-344.58 149.59,-354.24"/>
+<polygon fill="black" stroke="black" points="157.89,-359.12 146.99,-357.93 154.63,-357.2 149.27,-354.05 149.27,-354.05 149.27,-354.05 154.63,-357.2 151.55,-350.17 157.89,-359.12"/>
+</g>
+<!-- rateslib.dual -->
+<g id="node6" class="node">
+<title>rateslib.dual</title>
+<polygon fill="none" stroke="black" points="603.69,-36 518.88,-36 518.88,0 603.69,0 603.69,-36"/>
+<text text-anchor="middle" x="561.28" y="-13.8" font-family="Times,serif" font-size="14.00">rateslib.dual</text>
+</g>
+<!-- rateslib.dual.newton -->
+<g id="node7" class="node">
+<title>rateslib.dual.newton</title>
+<polygon fill="none" stroke="black" points="225.04,-108 95.52,-108 95.52,-72 225.04,-72 225.04,-108"/>
+<text text-anchor="middle" x="160.28" y="-85.8" font-family="Times,serif" font-size="14.00">rateslib.dual.newton</text>
+</g>
+<!-- rateslib.dual.utils -->
+<g id="node9" class="node">
+<title>rateslib.dual.utils</title>
+<polygon fill="none" stroke="black" points="174.5,-180 62.07,-180 62.07,-144 174.5,-144 174.5,-180"/>
+<text text-anchor="middle" x="118.28" y="-157.8" font-family="Times,serif" font-size="14.00">rateslib.dual.utils</text>
+</g>
+<!-- rateslib.dual.newton&#45;&gt;rateslib.dual.utils -->
+<g id="edge3" class="edge">
+<title>rateslib.dual.newton-&gt;rateslib.dual.utils</title>
+<path fill="none" stroke="black" d="M149.9,-108.3C145.17,-116.19 139.46,-125.7 134.21,-134.45"/>
+<polygon fill="black" stroke="black" points="129.17,-142.85 130.46,-131.96 131.12,-139.61 134.32,-134.28 134.32,-134.28 134.32,-134.28 131.12,-139.61 138.17,-136.59 129.17,-142.85"/>
+</g>
+<!-- rateslib.dual.newton&#45;&gt;rateslib.rs -->
+<g id="edge4" class="edge">
+<title>rateslib.dual.newton-&gt;rateslib.rs</title>
+<path fill="none" stroke="black" d="M169.18,-108.23C174.06,-118.39 179.81,-131.64 183.28,-144 200.75,-206.21 198.83,-223.54 203.28,-288 204.38,-303.96 205.48,-308.15 203.28,-324 202.14,-332.24 200.04,-341 197.77,-348.98"/>
+<polygon fill="black" stroke="black" points="194.88,-358.43 193.5,-347.55 195.98,-354.81 197.8,-348.87 197.8,-348.87 197.8,-348.87 195.98,-354.81 202.1,-350.18 194.88,-358.43"/>
+</g>
+<!-- rateslib.dual.quadratic -->
+<g id="node8" class="node">
+<title>rateslib.dual.quadratic</title>
+<polygon fill="none" stroke="black" points="230.48,-36 90.08,-36 90.08,0 230.48,0 230.48,-36"/>
+<text text-anchor="middle" x="160.28" y="-13.8" font-family="Times,serif" font-size="14.00">rateslib.dual.quadratic</text>
+</g>
+<!-- rateslib.dual.quadratic&#45;&gt;rateslib.dual.newton -->
+<g id="edge5" class="edge">
+<title>rateslib.dual.quadratic-&gt;rateslib.dual.newton</title>
+<path fill="none" stroke="black" d="M160.28,-36.3C160.28,-43.68 160.28,-52.48 160.28,-60.75"/>
+<polygon fill="black" stroke="black" points="160.28,-70.68 155.78,-60.68 160.28,-66.9 160.28,-60.68 160.28,-60.68 160.28,-60.68 160.28,-66.9 164.78,-60.68 160.28,-70.68"/>
+</g>
+<!-- rateslib.dual.utils&#45;&gt;rateslib.default -->
+<g id="edge6" class="edge">
+<title>rateslib.dual.utils-&gt;rateslib.default</title>
+<path fill="none" stroke="black" d="M61.83,-179.67C44.48,-187.73 27.32,-199.39 17.28,-216 9,-229.69 11.23,-237.19 17.28,-252 21.6,-262.56 29.14,-272.15 37.17,-280.19"/>
+<polygon fill="black" stroke="black" points="44.36,-286.85 33.97,-283.35 41.59,-284.28 37.03,-280.05 37.03,-280.05 37.03,-280.05 41.59,-284.28 40.08,-276.75 44.36,-286.85"/>
+</g>
+<!-- rateslib.dual.variable -->
+<g id="node10" class="node">
+<title>rateslib.dual.variable</title>
+<polygon fill="none" stroke="black" points="159.98,-252 26.58,-252 26.58,-216 159.98,-216 159.98,-252"/>
+<text text-anchor="middle" x="93.28" y="-229.8" font-family="Times,serif" font-size="14.00">rateslib.dual.variable</text>
+</g>
+<!-- rateslib.dual.utils&#45;&gt;rateslib.dual.variable -->
+<g id="edge7" class="edge">
+<title>rateslib.dual.utils-&gt;rateslib.dual.variable</title>
+<path fill="none" stroke="black" d="M112.1,-180.3C109.38,-187.93 106.11,-197.08 103.07,-205.6"/>
+<polygon fill="black" stroke="black" points="99.8,-214.75 98.93,-203.82 101.07,-211.19 103.16,-205.33 103.16,-205.33 103.16,-205.33 101.07,-211.19 107.4,-206.84 99.8,-214.75"/>
+</g>
+<!-- rateslib.dual.utils&#45;&gt;rateslib.rs -->
+<g id="edge8" class="edge">
+<title>rateslib.dual.utils-&gt;rateslib.rs</title>
+<path fill="none" stroke="black" d="M140.88,-180.49C151.31,-189.85 162.78,-202.26 169.28,-216 189.63,-259.02 191.39,-315.43 190.24,-348.79"/>
+<polygon fill="black" stroke="black" points="189.79,-358.35 185.76,-348.15 189.97,-354.58 190.26,-348.36 190.26,-348.36 190.26,-348.36 189.97,-354.58 194.75,-348.57 189.79,-358.35"/>
+</g>
+<!-- rateslib.dual.variable&#45;&gt;rateslib.default -->
+<g id="edge9" class="edge">
+<title>rateslib.dual.variable-&gt;rateslib.default</title>
+<path fill="none" stroke="black" d="M87.35,-252.3C84.76,-259.85 81.66,-268.88 78.77,-277.32"/>
+<polygon fill="black" stroke="black" points="75.54,-286.74 74.53,-275.82 76.77,-283.17 78.78,-277.28 78.78,-277.28 78.78,-277.28 76.77,-283.17 83.04,-278.74 75.54,-286.74"/>
+</g>
+<!-- rateslib.dual.variable&#45;&gt;rateslib.rs -->
+<g id="edge10" class="edge">
+<title>rateslib.dual.variable-&gt;rateslib.rs</title>
+<path fill="none" stroke="black" d="M104.93,-252.41C121.4,-277.03 151.62,-322.2 170.79,-350.86"/>
+<polygon fill="black" stroke="black" points="176.16,-358.88 166.86,-353.07 174.05,-355.73 170.6,-350.56 170.6,-350.56 170.6,-350.56 174.05,-355.73 174.34,-348.06 176.16,-358.88"/>
+</g>
+</g>
+</svg>
